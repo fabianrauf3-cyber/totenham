@@ -1,0 +1,241 @@
+
+aside .logo {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+aside .logo img {
+  width: 150px;          
+  height: auto;
+  display: inline-block;
+  border-radius: 10px;  
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  min-height: 100vh;
+  background-color: #f0f8ff; 
+}
+
+
+aside {
+  width: 220px;
+  background: linear-gradient(to bottom, rgb(16, 4, 82), #1479ec); 
+  color: white;
+  padding: 20px;
+  flex-shrink: 0;
+  box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+  border-radius: 0 10px 10px 0;
+}
+
+
+aside nav ul {
+  list-style: none;
+}
+
+aside nav ul li {
+  margin-bottom: 15px;
+}
+
+aside nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  padding: 10px 12px;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+
+aside nav ul li a:hover {
+  background-color: #6bb0ff;  
+  color: #000000;
+  transform: scale(1.05);
+}
+
+
+main {
+  flex: 1;
+  padding: 40px;
+  background-color: #ffffff; 
+  border-radius: 10px;
+  margin: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+
+main h1 {
+  color: #2575fc; 
+  margin-bottom: 20px;
+  font-size: 32px;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.2);
+}
+
+
+main p {
+  margin-bottom: 15px;
+  line-height: 1.6;
+  color: #333;
+  font-size: 16px;
+}
+
+
+main img {
+  max-width: 90%;
+  height: auto;
+  display: block;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+main img:hover {
+  transform: scale(1.05); 
+}
+
+
+footer {
+  text-align: center;
+  padding: 15px;
+  background-color: #2575fc;
+  color: white;
+  margin-top: 20px;
+  border-radius: 10px 10px 0 0;
+}
+
+.karakter-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 20px;
+}
+
+
+.karakter-item {
+  text-align: center;
+  width: 250px;
+  padding: 10px;
+  border: 3px solid #2575fc;   
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+
+.karakter-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.karakter-item img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.galeri-container {
+  display: flex;           
+  gap: 20px;               
+  overflow-x: auto;        
+  padding: 20px;
+  scroll-behavior: smooth; 
+}
+
+
+.galeri-item {
+  flex: 0 0 auto;           
+  width: 300px;             
+  border: 3px solid #1abc9c;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  overflow: hidden;          
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  text-align: center;
+}
+
+
+.galeri-item:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+
+.galeri-item img {
+  width: 100%;
+  height: 200px;         
+  object-fit: contain;   
+  display: block;
+}
+
+
+.galeri-item .info {
+  background-color: rgba(0,0,0,0.7); 
+  color: white;
+  padding: 8px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.karakter-container,
+.galeri-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;             
+  justify-content: center;
+  padding: 20px;
+}
+
+.karakter-item,
+.galeri-item {
+  text-align: center;
+  width: 280px;            
+  height: 380px;           
+  padding: 10px;
+  border: 2px solid #2575fc;
+  border-radius: 15px;
+  background-color: #f9f9f9;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;  
+}
+
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.contact-info p {
+    font-weight: bold;
+    font-size: 16px;
+    color: #333;
+}
+
+.contact-info a {
+    color: #2575fc;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+    color: #ff6b6b;
+}
